@@ -1,0 +1,19 @@
+---
+title: "plotly_demo"
+author: pastrami0@github
+date: April 22, 2018
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Slide with Plot
+
+```{r , echo=FALSE}
+suppressPackageStartupMessages(library(plotly) )
+plot_ly(iris, x=~Species, y=~Sepal.Length, type = 'box')
+```
+
